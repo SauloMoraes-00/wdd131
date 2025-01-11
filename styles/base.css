@@ -19,10 +19,6 @@ header, footer {
     color: #ffffff;
 }
 
-a {
-    color: var(--secondary-color);
-}
-
 .card {
     background-color: #FFFFFF;
     border: 1px solid var(--neutral-color);
