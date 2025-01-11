@@ -88,14 +88,18 @@ main {
 }
 
 .card {
-    display: grid; /* Enable grid layout for the card */
-    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-    grid-template-rows: auto auto; /* Two rows with automatic height */
-    gap: 1rem; /* Space between grid items */
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-template-rows: auto auto auto; /* Three rows with automatic height */
+    gap: 1rem; /* Space between items */
     background-color: #ffffff; /* Card background color */
     padding: 1.5rem; /* Inner spacing */
     border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card > *:first-child {
+    grid-column: 1 / -1; /* Make the first item span the entire top row */
 }
 
 .card img {
@@ -104,5 +108,3 @@ main {
     border-radius: 8px; /* Optional: Rounds image corners */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
-
-
