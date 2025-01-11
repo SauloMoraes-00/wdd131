@@ -49,7 +49,7 @@ nav {
 .nav-links li a {
     position: relative; /* Required for pseudo-elements */
     text-decoration: none; /* Remove underline */
-    color: #3498DB; /* Text color */
+    color: #ffffff; /* Text color */
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
