@@ -78,10 +78,19 @@ nav {
 }
 
 main {
-    max-width: 1200px; /* Limits the maximum width of the main content */
-    margin: 0 auto; /* Centers the main element horizontally */
-    padding: 1rem; /* Adds spacing inside the element */
-    background-color: #ffffff; /* Optional: Set a background color for contrast */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
-    border-radius: 8px; /* Optional: Rounds the corners for a modern look */
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Space between grid items */
+    max-width: 1200px; /* Limit the main container width */
+    margin: 0 auto; /* Center the main element */
+    padding: 1rem; /* Add spacing inside the main element */
+    background-color: var(--background-color); /* Optional background color */
 }
+
+.card {
+    background-color: #ffffff; /* Card background color */
+    padding: 1.5rem; /* Inner spacing for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
