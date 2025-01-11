@@ -6,9 +6,12 @@
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color); /* Use the neutral background color */
+    color: var(--primary-color); /* Default text color */
+    line-height: 1.6; /* Improves text readability */
 }
 
 header, footer {
@@ -74,3 +77,11 @@ nav {
     width: 100%; 
 }
 
+main {
+    max-width: 1200px; /* Limits the maximum width of the main content */
+    margin: 0 auto; /* Centers the main element horizontally */
+    padding: 1rem; /* Adds spacing inside the element */
+    background-color: #ffffff; /* Optional: Set a background color for contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+    border-radius: 8px; /* Optional: Rounds the corners for a modern look */
+}
