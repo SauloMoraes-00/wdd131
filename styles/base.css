@@ -16,7 +16,7 @@ body {
 
 header, footer {
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: #3498DB;
 }
 
 a {
