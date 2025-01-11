@@ -100,6 +100,10 @@ main {
 
 .card > *:first-child {
     grid-column: 1 / -1; /* Make the first item span the entire top row */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    text-align: center; /* Ensure the text is centered */
 }
 
 .card img {
@@ -108,3 +112,4 @@ main {
     border-radius: 8px; /* Optional: Rounds image corners */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
+
