@@ -41,8 +41,8 @@ main {
     padding: 20px;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a grid with flexible columns */
-    gap: 20px; /* Add space between grid items */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; 
 }
 
 figure {

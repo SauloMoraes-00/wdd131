@@ -1,6 +1,6 @@
-/* Hamburger Button */
+
 .hamburger {
-    display: none; /* Hide by default */
+    display: none; 
     font-size: 30px;
     background: none;
     border: none;
@@ -8,14 +8,13 @@
     cursor: pointer;
 }
 
-/* Show the hamburger button in mobile view */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
     }
 
     #navList {
-        display: none; /* Hide navigation links by default in mobile view */
+        display: none; 
         position: absolute;
         top: 60px;
         left: 0;
@@ -35,11 +34,10 @@
     }
 
     #navList.active {
-        display: block; /* Show the menu when active */
+        display: block; 
     }
 }
 
-/* Menu item hover effect */
 #navList li a:hover {
     color: #FFD700;
     text-decoration: underline;
