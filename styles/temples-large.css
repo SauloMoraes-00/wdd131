@@ -27,8 +27,11 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
+    color: #FFD700;
     text-decoration: underline;
 }
+
