@@ -40,4 +40,14 @@ main {
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a grid with flexible columns */
+    gap: 20px; /* Add space between grid items */
+}
+
+figure {
+    margin: 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
 }
