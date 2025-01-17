@@ -1,6 +1,47 @@
+/* Hamburger Button */
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Show the hamburger button in mobile view */
 @media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr; /* Single column layout for mobile view */
+    .hamburger {
+        display: block;
     }
+
+    #navList {
+        display: none; /* Hide navigation links by default in mobile view */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #4CAF50;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navList li {
+        margin: 10px 0;
+    }
+
+    #navList li a {
+        font-size: 1.2em;
+        color: white;
+        text-decoration: none;
+    }
+
+    #navList.active {
+        display: block; /* Show the menu when active */
+    }
+}
+
+/* Menu item hover effect */
+#navList li a:hover {
+    color: #FFD700;
+    text-decoration: underline;
 }
 
