@@ -41,8 +41,9 @@ main {
     padding: 20px;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Default 3 columns */
     gap: 20px;
+    grid-auto-flow: row; /* Ensure items flow row by row */
 }
 
 figure {
