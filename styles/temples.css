@@ -48,28 +48,25 @@ main {
     gap: 20px;
 }
 
-
 figure {
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 10px;
     background-color: #f4f4f4;
     border-radius: 5px;
-    text-align: center; 
-    max-width: 150px; 
+    text-align: center;
+    max-width: 150px;
 }
-
 
 figure img {
-    max-width: 250px; 
-    height: auto; 
+    max-width: 250px;
+    height: auto;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-
-figure figcaption {
-    margin-top: 10px; 
-    font-size: 0.9em; 
-    color: #333; 
+figure h2 {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #333;
     text-align: center;
 }
