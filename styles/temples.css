@@ -44,9 +44,10 @@ main {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
+
 
 figure {
     margin: 0 auto; 
