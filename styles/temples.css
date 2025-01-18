@@ -53,8 +53,11 @@ figure {
     padding: 10px;
     background-color: #f4f4f4;
     border-radius: 5px;
-    text-align: center; 
-    max-width: 150px; 
+    text-align: center;
+    display: flex;           
+    flex-direction: column;  
+    align-items: center;     
+    max-width: 250px;        
 }
 
 figure img {
@@ -68,8 +71,9 @@ figure figcaption {
     margin-top: 10px; 
     font-size: 0.9em; 
     color: #333; 
-    text-align: center;
+    text-align: center;      
 }
+
 
 h2 {
     text-align: center;   
