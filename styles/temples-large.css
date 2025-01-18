@@ -8,7 +8,13 @@
     cursor: pointer;
 }
 
-@media (max-width: 782px) {
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr; /* 2 columns */
+    }
+}
+
+@media (max-width: 600px) {
     .hamburger {
         display: block;
     }
