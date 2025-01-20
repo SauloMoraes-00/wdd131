@@ -32,8 +32,8 @@ article p {
 }
 
 .callout {
-	color: #777;
-	background: color #030707;
+	color: #030707;
+	background: color #777;
 	padding: 1rem;
 }
 
