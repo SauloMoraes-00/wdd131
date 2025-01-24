@@ -18,10 +18,9 @@
     </header>
     <main>
         <div class="hero">
-            <img src="images/Londrina2.webp"
-            srcset="images/Londrina2.webp 619w, images/Londrina.webp 620w"
-            sizes="100vw"
-            alt="Londrina pic">
+            <source media="(min-width: 650px)" srcset="images/Londrina.webp">
+            <source media="(min-width: 450px)" srcset="images/Londrina2.webp">
+            <img src="images/Londrina2.webp" alt="Londrina pic">
         </div>
         <div class="data">
           <h2>Data</h2>
