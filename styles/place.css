@@ -19,14 +19,6 @@ body {
   text-align: center;
 }
 
-/* Heading inside the hero section */
-.hero h1 {
-  font-size: 3rem;
-  font-family: 'Montserrat', sans-serif; /* Stylish font for headings */
-  font-weight: 700; /* Bold font weight */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-}
-
 /* Hero image styling */
 .hero img {
   position: absolute;
