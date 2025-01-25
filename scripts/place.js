@@ -1,21 +1,14 @@
-async function fetchWeather() {
-    try {
-      const apiKey = 'your_api_key_here'; // Replace with your OpenWeatherMap API key
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=Londrina,BR&units=metric&appid=${apiKey}`;
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error('Failed to fetch weather data');
-      }
-      const data = await response.json();
-      
-      // Extract and display relevant weather info
-      const temp = data.main.temp;
-      const description = data.weather[0].description;
-      const weatherInfo = `Temperature: ${temp}°C, ${description}`;
-      
-      document.getElementById('weather-info').textContent = weatherInfo;
-    } catch (error) {
-      document.getElementById('weather-info').textContent = 'Unable to fetch weather data.';
-      console.error(error);
-    }
-  }
+// Function to calculate wind chill factor
+function calculateWindChill(temp, windSpeed, unit = 'F') {
+  return unit === 'F' 
+    ? 35.74 + 0.6215 * temp - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temp * Math.pow(windSpeed, 0.16)
+    : 13.12 + 0.6215 * temp - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temp * Math.pow(windSpeed, 0.16);
+}
+
+// Example usage:
+console.log(calculateWindChill(30, 10, 'F')); // Wind chill in Fahrenheit
+console.log(calculateWindChill(-5, 20, 'C')); // Wind chill in Celsius
+
+const temperature = 24
+const windSpeed = 10
+const windChillDiv = document.getElementById ("windchill")
