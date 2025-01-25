@@ -11,4 +11,11 @@ console.log(calculateWindChill(-5, 20, 'C')); // Wind chill in Celsius
 
 const temperature = 24
 const windSpeed = 10
+const windchill = calculateWindChill(temperature, windSpeed).toFixed(1);
 const windChillDiv = document.getElementById ("windchill")
+windChillDiv.innerHTML = `
+<p><strong>Temperature: ${temperature}°C</strong></p>
+<p><strong>Conditions: Partly Cloundy</strong></p>
+<p><strong>Wind: ${windSpeed}km/h</strong></p>
+<p><strong>Windchill: ${windchill}°C</strong></p>
+`;
