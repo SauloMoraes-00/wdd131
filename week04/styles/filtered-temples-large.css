@@ -1,0 +1,55 @@
+
+.hamburger {
+    display: none; 
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr; /* 2 columns */
+    }
+}
+
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; 
+    }
+
+    #navList {
+        display: none; 
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #14213d;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navList li {
+        margin: 10px 0;
+    }
+
+    #navList li a {
+        font-size: 1.2em;
+        color: white;
+        text-decoration: none;
+    }
+
+    #navList.active {
+        display: block; 
+    }
+}
+
+#navList li a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
