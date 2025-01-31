@@ -71,3 +71,6 @@ footer {
     background-color: #333;
     color: white;
 }
+main h2 {
+    text-align: center;
+}
