@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice & Gather - Find/Host a Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-container">
+                <div class="logo">Dice & Gather</div>
+                <div class="hamburger">&#9776;</div>
+                <div class="nav-links">
+                    <a href="project.html">Home</a>
+                    <a href="Find-Host.html">Find/Host a Game</a>
+                    <a href="#">Manuals</a>
+                    <a href="About.html">About</a>
+                </div>
+                <button class="cta-button">Login/Sign-up</button>
+            </div>
+        </nav>        
+
+        <section class="featured-games">
+            <h2>Featured Games</h2>
+            <div class="game-grid">
+                <div class="game-card dnd">
+                    <h3>Dungeons & Dragons</h3>
+                </div>
+                <div class="game-card catan">
+                    <h3>Catan</h3>
+                </div>
+                <div class="game-card magic">
+                    <h3>Magic: The Gathering</h3>
+                </div>
+                <div class="game-card warhammer">
+                    <h3>Warhammer</h3>
+                </div>
+            </div>
+        </section>
+        <section class="game-listings">
+            <h2>Game Listings</h2>
+            <div class="listings-grid">
+                <div class="listing-card">
+                    <h3>Dungeons and Dragons</h3>
+                    <p>Host: John Doe</p>
+                    <p>Location: Online</p>
+                    <p>Slots Available: 3/5</p>
+                    <button type="submit" class="cta-button">Join Game</button>
+                </div>
+                <div class="listing-card">
+                    <h3>Magic</h3>
+                    <p>Host: Jane Smith</p>
+                    <p>Location: Local Cafe</p>
+                    <p>Slots Available: 1/4</p>
+                    <button type="submit" class="cta-button">Join Game</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="host-game">
+            <h2>Host a Game</h2>
+            <form action="posted.html" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Cell Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="game">Game Name:</label>
+                <select id="game" name="game" required>
+                    <option value="">Select a Game</option>
+                    <option value="dnd">Dungeons & Dragons</option>
+                    <option value="catan">Catan</option>
+                    <option value="magic">Magic: The Gathering</option>
+                    <option value="wh40k">Warhammer 40K</option>
+                </select>
+                
+                <label for="date">Table Day:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                
+                <button type="submit" class="cta-button">Set Game</button>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2023 Dice & Gather. All rights reserved.</p>
+            <p>
+                <a href="#">FAQ</a> |
+                <a href="#">Terms</a> |
+                <a href="#">Privacy</a>
+            </p>
+            <p>Follow us: 
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
